@@ -118,9 +118,9 @@ class Todo extends Widget {
                <li>
                    <span>${task}</span>
                    <span>
-                       <button class="btn btn-in-work" data-id="${id}">⇨</button>
-                       <button class="btn btn-edit-task-list" data-id = "${id}">✎</button>
-                       <button class="btn btn-delete-task-list" data-id = "${id}">✖</button>
+                       <button class="btn btn-in-work" data-id="${id}" title='Переместить в "В процессе"'>⇨</button>
+                       <button class="btn btn-edit-task-list" data-id = "${id}" title="Изменить">✎</button>
+                       <button class="btn btn-delete-task-list" data-id = "${id}" title="Удалить">✖</button>
                        
                     </span>
                </li>
@@ -178,8 +178,8 @@ class Todo extends Widget {
                <li>
                    <span>${task}</span>
                    <span>
-                       <button class="btn btn-done" data-id="${id}">⇨</button>
-                       <button class="btn btn-return-to-task-list" data-id = "${id}">⇦</button>
+                       <button class="btn btn-done" data-id="${id}" title='Переместить в "Готово"'>⇨</button>
+                       <button class="btn btn-return-to-task-list" data-id = "${id}" title='Вернуть в "Список задач"'>⇦</button>
                     </span>
               </li>
            `;
@@ -237,7 +237,7 @@ class Todo extends Widget {
                <li>
                    <span>${task}</span>
                    <span>
-                        <button class="btn btn-return-to-work" data-id="${id}">⇦</button>
+                        <button class="btn btn-return-to-work" data-id="${id}" title='Вернуть в "В процессе"'>⇦</button>
                    </span>
               </li>
            `;
