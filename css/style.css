@@ -7,13 +7,6 @@ input, button, textarea {
     outline: none;
 }
 
-.wiget-todo .btn {
-    color: #fff;
-    border: none;
-    padding: 2px 1px;
-    cursor: pointer;
-}
-
 .wiget-todo {
     display: flex;
     justify-content: space-between;
@@ -47,6 +40,23 @@ input, button, textarea {
     box-shadow: 0 1px 0 rgba(9,30,66,.25);
 }
 
+.wiget-todo ul li .btn {
+    color: #fff;
+    border: none;
+    padding: 2px 1px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.wiget-todo ul li:hover {
+    background-color: #f9f9f9;
+}
+
+.wiget-todo ul li:hover .btn {
+     opacity: 1;
+ }
+
 .wiget-todo ul li span:nth-child(2) {
     display: inline-block;
 }
@@ -77,6 +87,7 @@ input, button, textarea {
     border: solid 1px #5aab44;
     cursor: pointer;
     margin-top: 5px;
+    transition: 0.2s;
 }
 
 .wiget-todo .add-task-list {
