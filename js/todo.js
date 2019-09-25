@@ -108,10 +108,13 @@ class Todo extends Widget {
         html += `
                <li>
                    <span>${task}</span>
-                   <button class="btn btn-delete-task-list" data-id = "${id}">✖</button>
-                   <button class="btn btn-edit-task-list" data-id = "${id}">✎</button>
-                   <button class="btn btn-in-work" data-id="${id}">⇨</button>
-              </li>
+                   <span>
+                       <button class="btn btn-in-work" data-id="${id}">⇨</button>
+                       <button class="btn btn-edit-task-list" data-id = "${id}">✎</button>
+                       <button class="btn btn-delete-task-list" data-id = "${id}">✖</button>
+                       
+                    </span>
+               </li>
            `;
         });
         this.ulTaskList.innerHTML = html;
@@ -165,8 +168,10 @@ class Todo extends Widget {
             html += `
                <li>
                    <span>${task}</span>
-                   <button class="btn btn-return-to-task-list" data-id = "${id}">⇦</button>
-                   <button class="btn btn-done" data-id="${id}">⇨</button>
+                   <span>
+                       <button class="btn btn-done" data-id="${id}">⇨</button>
+                       <button class="btn btn-return-to-task-list" data-id = "${id}">⇦</button>
+                    </span>
               </li>
            `;
         });
@@ -222,7 +227,9 @@ class Todo extends Widget {
             html += `
                <li>
                    <span>${task}</span>
-                   <button class="btn btn-return-to-work" data-id="${id}">⇦</button>
+                   <span>
+                        <button class="btn btn-return-to-work" data-id="${id}">⇦</button>
+                   </span>
               </li>
            `;
         });
