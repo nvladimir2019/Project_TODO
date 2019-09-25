@@ -60,3 +60,7 @@ input, button {
     border: solid 1px #a3a4a8;
     cursor: pointer;
 }
+
+.wiget-todo .btn-add-task-list:hover {
+    background-color: #e9eaee;
+}

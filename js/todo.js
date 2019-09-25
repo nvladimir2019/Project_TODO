@@ -30,6 +30,15 @@ class Todo extends Widget {
            this.updateTaskList();
         });
 
+        this.inputAddTaskList.addEventListener('keydown', (e)=> {
+            if(e.keyCode === 13) {
+                let task = this.inputAddTaskList.value;
+                this.addTaskList(task);
+                this.inputAddTaskList.value = "";
+                this.updateTaskList();
+            }
+        });
+
         this.ulTaskList.addEventListener('click', (e)=> {
             if(e.target.classList.contains('btn-delete-task-list')) {
                 let id = e.target.dataset.id;
