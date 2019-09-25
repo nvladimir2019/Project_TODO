@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wiget-todo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wiget-todo ul li {
+    background-color: #369;
+    padding: 5px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.wiget-todo ul li {
+    list-style: none;
+}
