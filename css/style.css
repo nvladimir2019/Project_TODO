@@ -7,6 +7,10 @@ body {
     background-image: url(../img/blue_textile_background.jpg);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 input, button, textarea {
     outline: none;
 }
@@ -15,6 +19,8 @@ input, button, textarea {
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    max-height: 100vh;
+    box-sizing: border-box;
 }
 
 .wiget-todo>div {
@@ -30,6 +36,16 @@ input, button, textarea {
     font-weight: bold;
     color: #3c3f41;
     font-family: Arial;
+}
+
+.wiget-todo .task-list ul {
+    max-height: calc(100vh - 210px);
+    overflow-y: scroll;
+}
+
+.wiget-todo .in-work ul, .wiget-todo .done ul {
+    max-height: calc(100vh - 80px);
+    overflow-y: scroll;
 }
 
 .wiget-todo ul li {
