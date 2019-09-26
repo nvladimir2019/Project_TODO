@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-image: url(../img/blue_textile_background.jpg);
+}
+
 input, button, textarea {
     outline: none;
 }
