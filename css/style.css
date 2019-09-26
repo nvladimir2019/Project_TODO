@@ -38,7 +38,7 @@ input, button, textarea {
 
 .wiget-todo>div {
     background-color: #eaebef;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     width: 30%;
 }
@@ -49,6 +49,10 @@ input, button, textarea {
     font-weight: bold;
     color: #3c3f41;
     font-family: Arial;
+}
+
+.wiget-todo ul {
+    padding-right: 5px;
 }
 
 .wiget-todo .task-list ul {
@@ -125,7 +129,7 @@ input, button, textarea {
 }
 
 .wiget-todo .add-task-list {
-    margin-top: 8px;
+    padding-right: 10px;
 }
 
 .wiget-todo .btn-add-task-list:hover {
@@ -157,5 +161,7 @@ input, button, textarea {
     background-color: rgba(170, 69, 0, 0.96);
 }
 
-
+.add_task_list {
+    padding-rigth: 5px;
+}
 
