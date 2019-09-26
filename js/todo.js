@@ -30,8 +30,8 @@ class Todo extends Widget {
            this.updateTaskList();
         });
 
-        this.inputAddTaskList.addEventListener('keydown', (e)=> {
-            if(e.keyCode === 13) {
+        this.inputAddTaskList.addEventListener('keypress', (e)=> {
+            if(e.keyCode === 10 && e.ctrlKey) {
                 let task = this.inputAddTaskList.value;
                 this.addTaskList(task);
                 this.inputAddTaskList.value = "";
@@ -95,6 +95,7 @@ class Todo extends Widget {
     }
 
     addTaskList(task) {
+        task = task.trim();
         if(task.length === 0) return;
         let taskList = this.getTaskList();
         if(taskList === null) {
