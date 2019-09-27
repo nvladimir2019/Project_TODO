@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/blue_textile_background.jpg);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+    margin-left: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eaebef;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #eaebef;
+}
+::-webkit-scrollbar-thumb {
+    height: 20px;
+    background-color: #cdced2;
+    border-radius: 3px;
+}
+
+input, button, textarea {
+    outline: none;
+}
+
+.wiget-todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+
+.wiget-todo>div {
+    background-color: #eaebef;
+    padding: 5px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.wiget-todo>div .title {
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #3c3f41;
+    font-family: Arial;
+}
+
+.wiget-todo ul {
+    padding-right: 5px;
+}
+
+.wiget-todo .task-list ul {
+    max-height: calc(100vh - 210px);
+    overflow-y: scroll;
+}
+
+.wiget-todo .in-work ul, .wiget-todo .done ul {
+    max-height: calc(100vh - 80px);
+    overflow-y: scroll;
+}
+
+.wiget-todo ul li {
+    list-style: none;
+    background-color: #fff;
+    padding: 5px;
+    color: #171717;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    min-height: 85px;
+}
+
+.wiget-todo ul li .btn {
+    color: #fff;
+    border: none;
+    padding: 2px 1px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.wiget-todo ul li:hover {
+    background-color: #f9f9f9;
+}
+
+.wiget-todo ul li:hover .btn {
+     opacity: 1;
+ }
+
+.wiget-todo ul li span:nth-child(2) {
+    display: inline-block;
+}
+
+.wiget-todo ul li span:nth-child(2) button {
+    display: block;
+    width: 25px;
+    font-size: 16px;
+    margin: 2px;
+}
+
+.wiget-todo .input-add-task-list {
+    border-radius: 5px;
+    border-color: #fff;
+    padding: 5px;
+    resize: none;
+    width: 100%;
+    height: 95px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+}
+
+.wiget-todo .btn-add-task-list {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #5aab44;
+    color: #fff;
+    border: solid 1px #5aab44;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+.wiget-todo .add-task-list {
+    padding-right: 10px;
+}
+
+.wiget-todo .btn-add-task-list:hover {
+    background-color: #6ec94d;
+    border-color: #6ec94d;
+}
+
+.wiget-todo .btn-edit-task-list:hover {
+    background-color: #ff9436;
+}
+
+.wiget-todo .btn-done:hover {
+    background-color: #2cce49;
+}
+
+.wiget-todo .btn-delete-task-list:hover {
+    background-color: #ff4f46;
+}
+
+.wiget-todo .btn-in-work:hover {
+    background-color: #2c65ff;
+}
+
+.wiget-todo .btn-return-to-task-list:hover {
+    background-color: #ede600;
+}
+
+.wiget-todo .btn-return-to-work:hover {
+    background-color: rgba(170, 69, 0, 0.96);
+}
+
+.add_task_list {
+    padding-rigth: 5px;
+}
+
